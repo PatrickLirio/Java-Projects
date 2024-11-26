@@ -14,7 +14,11 @@ public class ATM {
         scanner = new Scanner(System.in);
     }
     public void displayMenu(){
-        System.out.println("ATM");
+        
+
+        System.out.println("=================================");
+        System.out.println("\t Welcome to PBL ATM ");
+        System.out.println("=================================");
         System.out.println("[1] Check Balance");
         System.out.println("[2] Withdraw");
         System.out.println("[3] Deposit");
@@ -30,7 +34,6 @@ public class ATM {
             switch(choice){
                 case 1:{
                     System.out.println("Balance: Php"+ account.getBalance());
-                    System.out.print("\033c"); 
                     break;
                 }
                 case 2: {
@@ -52,7 +55,9 @@ public class ATM {
                 }
                 case 4: {
                     System.out.println("Thank you for using the ATM Goodbye!");
+                    
                     break;
+                    
                 }
                 default: {
                     System.out.println("Invalid choice");
